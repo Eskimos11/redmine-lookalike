@@ -1,7 +1,7 @@
 package com.pap.redminelookalike.security;
 
 
-import com.pap.redminelookalike.dao.UserRepository;
+import com.pap.redminelookalike.repository.UserRepository;
 import com.pap.redminelookalike.entity.User;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;

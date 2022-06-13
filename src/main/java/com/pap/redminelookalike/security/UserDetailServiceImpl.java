@@ -1,7 +1,7 @@
 package com.pap.redminelookalike.security;
 
 
-import com.pap.redminelookalike.dao.UserRepository;
+import com.pap.redminelookalike.repository.UserRepository;
 import com.pap.redminelookalike.entity.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
