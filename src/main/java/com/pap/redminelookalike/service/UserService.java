@@ -2,9 +2,9 @@ package com.pap.redminelookalike.service;
 
 import com.pap.redminelookalike.controller.dto.UserDto.UserCreateDto;
 import com.pap.redminelookalike.controller.dto.UserDto.UserDto;
-import com.pap.redminelookalike.dao.DetailsRepository;
-import com.pap.redminelookalike.dao.RoleRepository;
-import com.pap.redminelookalike.dao.UserRepository;
+import com.pap.redminelookalike.repository.DetailsRepository;
+import com.pap.redminelookalike.repository.RoleRepository;
+import com.pap.redminelookalike.repository.UserRepository;
 import com.pap.redminelookalike.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;

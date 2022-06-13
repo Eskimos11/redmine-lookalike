@@ -1,4 +1,4 @@
-package com.pap.redminelookalike.dao;
+package com.pap.redminelookalike.repository;
 
 
 import org.springframework.stereotype.Repository;
