@@ -9,9 +9,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/users")
+@CrossOrigin (origins = "http://localhost:3000")
 public class UserController {
 
     private final UserService userService;
@@ -37,6 +40,11 @@ public class UserController {
     @PutMapping
     public UserDto updateUser(@RequestBody UserDto userDto) {
         return userService.updateUser(userDto);
+    }
+
+    @GetMapping
+    public List<UserDto> getAllUsers(){
+        return userService.getAllUsers();
     }
 
 //    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
