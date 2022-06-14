@@ -12,7 +12,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -48,6 +50,14 @@ public class UserService {
     public User getUserInfo(Long id) {
         final Optional<User> user = userRepository.findById(id);
         return user.orElse(null);
+    }
+    @Transactional
+    public List<UserDto> getAllUsers(){
+        List<User> userList = userRepository.findAll();
+        return userList
+                .stream()
+                .map(user -> mapper.map(user, UserDto.class))
+                .collect(Collectors.toList());
     }
 
     @Transactional
