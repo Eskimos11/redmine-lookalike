@@ -37,6 +37,37 @@
   }
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #F1EFE1;
+  text-align: center;
+  color: #fff;
+}
+
+.utility-panel {
+  margin:0; 
+  padding:0; 
+  height:100%; 
+}
+
+/* COLOR CLASSES*/
+
 .dark-blue {
   background-color: #2C4056;
   color: #FFFFFF;
@@ -45,4 +76,12 @@
 .light-blue {
   background-color: #4F7AAA;
   color: #FFFFFF;
+}
+
+.beige {
+  background-color: #F1EFE1;
+}
+
+.gray {
+  background-color: #EEEEEE;
 }
